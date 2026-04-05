@@ -1,26 +1,288 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafafa;
+  --foreground: #0f1419;
+  --ocean-50: #f0f7ff;
+  --ocean-100: #e0effe;
+  --ocean-200: #b9dffd;
+  --ocean-300: #7cc8fb;
+  --ocean-400: #36adf6;
+  --ocean-500: #0c93e7;
+  --ocean-600: #0074c5;
+  --ocean-700: #015d9f;
+  --ocean-800: #064f83;
+  --ocean-900: #0b426d;
+  --ocean-950: #072a49;
+  --bush-50: #f3faf3;
+  --bush-100: #e3f5e3;
+  --bush-200: #c8eac9;
+  --bush-300: #9dd89f;
+  --bush-400: #6bbf6e;
+  --bush-500: #47a34b;
+  --bush-600: #358539;
+  --bush-700: #2d6930;
+  --bush-800: #285429;
+  --bush-900: #224524;
+  --bush-950: #0e2510;
+  --ochre-50: #fdf8ed;
+  --ochre-100: #f8ebcc;
+  --ochre-200: #f1d594;
+  --ochre-300: #eabc5d;
+  --ochre-400: #e5a636;
+  --ochre-500: #dc8b1e;
+  --ochre-600: #c26b17;
+  --ochre-700: #a14d17;
+  --ochre-800: #843d19;
+  --ochre-900: #6d3318;
+  --ochre-950: #3e190a;
+  --sunset-50: #fef4ee;
+  --sunset-100: #fde6d7;
+  --sunset-200: #facaae;
+  --sunset-300: #f6a57b;
+  --sunset-400: #f17646;
+  --sunset-500: #ee5522;
+  --sunset-600: #df3b18;
+  --sunset-700: #b92a16;
+  --sunset-800: #93241a;
+  --sunset-900: #772118;
+  --sunset-950: #400e0b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-playfair-display);
+
+  --color-ocean-50: var(--ocean-50);
+  --color-ocean-100: var(--ocean-100);
+  --color-ocean-200: var(--ocean-200);
+  --color-ocean-300: var(--ocean-300);
+  --color-ocean-400: var(--ocean-400);
+  --color-ocean-500: var(--ocean-500);
+  --color-ocean-600: var(--ocean-600);
+  --color-ocean-700: var(--ocean-700);
+  --color-ocean-800: var(--ocean-800);
+  --color-ocean-900: var(--ocean-900);
+  --color-ocean-950: var(--ocean-950);
+
+  --color-bush-50: var(--bush-50);
+  --color-bush-100: var(--bush-100);
+  --color-bush-200: var(--bush-200);
+  --color-bush-300: var(--bush-300);
+  --color-bush-400: var(--bush-400);
+  --color-bush-500: var(--bush-500);
+  --color-bush-600: var(--bush-600);
+  --color-bush-700: var(--bush-700);
+  --color-bush-800: var(--bush-800);
+  --color-bush-900: var(--bush-900);
+  --color-bush-950: var(--bush-950);
+
+  --color-ochre-50: var(--ochre-50);
+  --color-ochre-100: var(--ochre-100);
+  --color-ochre-200: var(--ochre-200);
+  --color-ochre-300: var(--ochre-300);
+  --color-ochre-400: var(--ochre-400);
+  --color-ochre-500: var(--ochre-500);
+  --color-ochre-600: var(--ochre-600);
+  --color-ochre-700: var(--ochre-700);
+  --color-ochre-800: var(--ochre-800);
+  --color-ochre-900: var(--ochre-900);
+  --color-ochre-950: var(--ochre-950);
+
+  --color-sunset-50: var(--sunset-50);
+  --color-sunset-100: var(--sunset-100);
+  --color-sunset-200: var(--sunset-200);
+  --color-sunset-300: var(--sunset-300);
+  --color-sunset-400: var(--sunset-400);
+  --color-sunset-500: var(--sunset-500);
+  --color-sunset-600: var(--sunset-600);
+  --color-sunset-700: var(--sunset-700);
+  --color-sunset-800: var(--sunset-800);
+  --color-sunset-900: var(--sunset-900);
+  --color-sunset-950: var(--sunset-950);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background-color: var(--ocean-200);
+  color: var(--ocean-950);
+}
+
+/* Skip to content link for accessibility */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  padding: 0.75rem 1.5rem;
+  background: var(--ocean-600);
+  color: white;
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-weight: 600;
+  transition: top 0.2s;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Prose styles for markdown content */
+.prose {
+  max-width: 65ch;
+  line-height: 1.75;
+}
+
+.prose h2 {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--ocean-950);
+}
+
+.prose h3 {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--ocean-900);
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+  color: #374151;
+}
+
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.prose blockquote {
+  border-left: 4px solid var(--ocean-300);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #4b5563;
+}
+
+.prose strong {
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.prose a {
+  color: var(--ocean-600);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose a:hover {
+  color: var(--ocean-700);
+}
+
+/* Scroll-triggered animation classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.animate-fade-in {
+  transform: none;
+}
+
+.animate-on-scroll.animate-scale {
+  transform: scale(0.9);
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Wave divider animation */
+@keyframes wave-drift {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-25%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-wave {
+  animation: wave-drift 15s ease-in-out infinite;
+}
+
+/* Gradient overlay cycling */
+@keyframes gradient-cycle {
+  0% { opacity: 0.7; background-position: 0% 50%; }
+  50% { opacity: 0.85; background-position: 100% 50%; }
+  100% { opacity: 0.7; background-position: 0% 50%; }
+}
+
+.animate-gradient-overlay {
+  background-size: 200% 200%;
+  animation: gradient-cycle 20s ease-in-out infinite;
+}
+
+/* Floating particle animation */
+@keyframes float-drift {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(10px, -15px); }
+  50% { transform: translate(-5px, -25px); }
+  75% { transform: translate(-15px, -10px); }
+}
+
+/* Trust badge continuous scroll */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+.animate-scroll-left:hover {
+  animation-play-state: paused;
+}
+
+/* Ink wash ambient blobs */
+@keyframes ink-morph {
+  0%, 100% { border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%; transform: translate(0, 0) rotate(0deg); }
+  33% { border-radius: 60% 40% 30% 70% / 40% 60% 40% 60%; transform: translate(20px, -15px) rotate(120deg); }
+  66% { border-radius: 30% 70% 50% 50% / 50% 40% 60% 50%; transform: translate(-10px, 10px) rotate(240deg); }
+}
+
+.animate-ink-morph {
+  animation: ink-morph 25s ease-in-out infinite;
+  pointer-events: none;
 }
