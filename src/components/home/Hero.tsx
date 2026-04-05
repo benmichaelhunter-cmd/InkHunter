@@ -12,7 +12,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-end justify-end overflow-hidden">
       {/* Background Image */}
       <Image
         src="https://assets.atdw-online.com.au/images/6e0e3b2099fe3bba68ff547ec6040368.jpeg?rect=0%2C607%2C2082%2C1562&w=1600&h=1200&rot=360"
@@ -28,7 +28,7 @@ export default function Hero() {
         className="absolute inset-0 animate-gradient-overlay"
         style={{
           background:
-            "linear-gradient(135deg, rgba(7,42,73,0.85) 0%, rgba(0,116,197,0.7) 40%, rgba(11,66,109,0.8) 70%, rgba(7,42,73,0.9) 100%)",
+            "linear-gradient(to top, rgba(7,42,73,0.95) 0%, rgba(7,42,73,0.7) 35%, rgba(7,42,73,0.15) 55%, rgba(7,42,73,0.05) 100%)",
         }}
       />
 
@@ -51,7 +51,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-left px-6 sm:px-10 md:px-16 pb-24 max-w-3xl">
         <div
           className={`transition-all duration-1000 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
@@ -77,14 +77,14 @@ export default function Hero() {
         <div
           className={`transition-all duration-700 delay-[900ms] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
-          <p className="mt-6 text-lg sm:text-xl text-ocean-100 max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-6 text-lg sm:text-xl text-ocean-100 max-w-2xl leading-relaxed">
             Environmental murals and placemaking that connect people to place,
             nature, and each other.
           </p>
         </div>
 
         <div
-          className={`mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 delay-[1100ms] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+          className={`mt-10 flex flex-col sm:flex-row items-start gap-4 transition-all duration-700 delay-[1100ms] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
           <Button href="/contact" variant="secondary" size="lg" className="!bg-white !text-ocean-950 hover:!bg-ocean-50 border-transparent shadow-2xl">
             Commission a Project
