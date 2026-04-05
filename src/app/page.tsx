@@ -1,6 +1,7 @@
 import Hero from "@/components/home/Hero";
 import Pillars from "@/components/home/Pillars";
 import FeaturedProject from "@/components/home/FeaturedProject";
+import VideoFeature from "@/components/home/VideoFeature";
 import TrustBadges from "@/components/home/TrustBadges";
 import InstagramFeed from "@/components/home/InstagramFeed";
 import WaveDivider from "@/components/ui/WaveDivider";
@@ -15,6 +16,7 @@ export default async function Home() {
       <WaveDivider color="#ffffff" />
       <Pillars />
       {featuredProject && <FeaturedProject project={featuredProject} />}
+      <VideoFeature />
       <TrustBadges />
       <InstagramFeed />
     </>
