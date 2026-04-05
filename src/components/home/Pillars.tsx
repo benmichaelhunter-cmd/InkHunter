@@ -59,9 +59,9 @@ export default function Pillars() {
                   <div
                     className={`relative p-8 lg:p-10 rounded-3xl bg-gradient-to-br ${colors.gradient} border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 h-full overflow-hidden`}
                   >
-                    {/* Large background number */}
+                    {/* Background number watermark */}
                     <span
-                      className={`absolute -top-4 -right-2 text-[8rem] font-display font-bold ${colors.number} opacity-50 leading-none select-none pointer-events-none transition-transform duration-500 group-hover:scale-110`}
+                      className={`absolute top-6 right-6 text-[6rem] font-display font-bold ${colors.number} opacity-30 leading-none select-none pointer-events-none transition-transform duration-500 group-hover:scale-105`}
                     >
                       {String(i + 1).padStart(2, "0")}
                     </span>
