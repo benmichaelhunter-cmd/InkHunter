@@ -350,7 +350,7 @@ const projects = [
     year: "2022",
     client: "Maitland City Council",
     desc: "First of seven Maitlanes project laneways. Environmental themes with native trees and flowing gum leaves. 100% renewable Colormaker paints. Set the creative benchmark for subsequent laneways.",
-    image: "https://thebigpicturefest.com/wp-content/uploads/2024/08/INK-HUNTER1.jpg",
+    image: "https://assets.atdw-online.com.au/images/6e0e3b2099fe3bba68ff547ec6040368.jpeg?rect=0%2C607%2C2082%2C1562&w=1600&h=1200&rot=360",
   },
   {
     title: "Manly Vibes",

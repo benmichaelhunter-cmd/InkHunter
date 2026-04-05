@@ -31,6 +31,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "thebigpicturefest.com",
       },
+      {
+        protocol: "https",
+        hostname: "assets.atdw-online.com.au",
+      },
     ],
   },
 };
