@@ -6,11 +6,11 @@ location: "Harris Park, Parramatta, NSW"
 year: 2026
 client: "City of Parramatta"
 featured: true
-coverImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=1200&h=800&fit=crop"
+coverImage: "https://desiaustralia.com/wp-content/uploads/2026/04/IMG_0714-scaled.jpg"
 galleryImages:
-  - "https://images.unsplash.com/photo-1561059488-916d69792237?w=800&h=600&fit=crop"
-  - "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&h=600&fit=crop"
-  - "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=600&fit=crop"
+  - "https://desiaustralia.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-04-at-1.25.02-PM-1024x768.jpeg"
+  - "https://desiaustralia.com/wp-content/uploads/2026/04/IMG_0710.jpg"
+  - "https://www.parranews.com.au/wp-content/uploads/2026/04/mural.jpg"
 brief: "Transforming 100+ metres of Station Street East into Parramatta's largest mural — a celebration of Harris Park's rich cultural tapestry, from sunrise to nightfall."
 testimonial:
   quote: "Patrick's ability to weave the stories of our diverse community into a single, breathtaking artwork has truly transformed Harris Park. This mural captures who we are."

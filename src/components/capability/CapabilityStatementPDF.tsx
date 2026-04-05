@@ -7,6 +7,7 @@ import {
   View,
   StyleSheet,
   Link,
+  Image as PdfImage,
 } from "@react-pdf/renderer";
 
 /* ------------------------------------------------------------------ */
@@ -328,35 +329,35 @@ const projects = [
     year: "2026",
     client: "City of Parramatta",
     desc: "100+ metre mural celebrating Little India — migration stories, shared meals, festivals, native wildlife, and river connectivity. Created with co-artists Gauri Torgalkar and Em Hatton. National media coverage and increased foot traffic.",
-    imagePlaceholder: "Harris Park mural hero image",
+    image: "https://desiaustralia.com/wp-content/uploads/2026/04/IMG_0714-1024x679.jpg",
   },
   {
     title: "Shallow Iridescence",
     year: "2023",
     client: "Australian National Maritime Museum",
     desc: "Perspective mural revealing a giant blue-ringed octopus from Pyrmont Bridge. Collaboration with First Nations curator Tyson Frigo and team. Led to the 'Octopus Garden' digital experience commission.",
-    imagePlaceholder: "Shallow Iridescence mural photo",
+    image: "https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20detail3%20photo%20Sahlan%20Hayes%201.jpg",
   },
   {
     title: "Marion Bay Algae Crisis Mural",
     year: "2025",
     client: "Self-initiated, community-supported",
     desc: "16,000 km journey to South Australia. Underwater 'coat of arms' featuring Leafy Sea Dragon and Giant Australian Cuttlefish. Supported by Great Southern Reef Foundation. National media coverage.",
-    imagePlaceholder: "Marion Bay mural photo",
+    image: null,
   },
   {
     title: "Passing On — Maitland",
     year: "2022",
     client: "Maitland City Council",
     desc: "First of seven Maitlanes project laneways. Environmental themes with native trees and flowing gum leaves. 100% renewable Colormaker paints. Set the creative benchmark for subsequent laneways.",
-    imagePlaceholder: "Passing On mural photo",
+    image: null,
   },
   {
     title: "Manly Vibes",
     year: "2019",
     client: "Northern Beaches Council",
     desc: "Award-winning coastal celebration. Won Australian Street Art Awards Utility Award 2019. Continues as the most photographed piece on Sydney's Northern Beaches.",
-    imagePlaceholder: "Manly Vibes mural photo",
+    image: "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c982ee896b28a7e75b49f2_PatrickHunter_20.jpg",
   },
 ];
 
@@ -408,7 +409,10 @@ export default function CapabilityStatementPDF() {
             Environmental murals and placemaking that connect people to place, nature, and each other.
           </Text>
           <View style={{ marginTop: 16 }}>
-            <ImagePlaceholder label="Cover image — hero mural photograph" width="100%" height={160} />
+            <PdfImage
+              src="https://desiaustralia.com/wp-content/uploads/2026/04/IMG_0714-1024x679.jpg"
+              style={{ width: "100%", height: 160, objectFit: "cover" as const, borderRadius: 4 }}
+            />
           </View>
         </View>
 
@@ -458,7 +462,11 @@ export default function CapabilityStatementPDF() {
           {projects.map((proj) => (
             <View key={proj.title} style={s.projectRow} wrap={false}>
               <View style={s.projectImage}>
-                <ImagePlaceholder label={proj.imagePlaceholder} width={120} height={80} />
+                {proj.image ? (
+                  <PdfImage src={proj.image} style={{ width: 120, height: 80, objectFit: "cover" as const, borderRadius: 4 }} />
+                ) : (
+                  <ImagePlaceholder label={`${proj.title} photo`} width={120} height={80} />
+                )}
               </View>
               <View style={s.projectContent}>
                 <Text style={s.projectTitle}>{proj.title}</Text>
@@ -558,9 +566,12 @@ export default function CapabilityStatementPDF() {
           </View>
         </View>
 
-        {/* Process image placeholder */}
+        {/* Process image */}
         <View style={[s.section, { marginTop: 14 }]}>
-          <ImagePlaceholder label="Process / studio / community consultation photograph" width="100%" height={100} />
+          <PdfImage
+            src="https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20with%20performers%202%20Photo%20Rhiannon%20Hopley.jpeg"
+            style={{ width: "100%", height: 100, objectFit: "cover" as const, borderRadius: 4 }}
+          />
         </View>
 
         <Footer />

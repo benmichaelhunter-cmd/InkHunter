@@ -15,6 +15,18 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "i0.wp.com",
       },
+      {
+        protocol: "https",
+        hostname: "cms-web.seamuseum.net",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.prod.website-files.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.parranews.com.au",
+      },
     ],
   },
 };

@@ -5,12 +5,12 @@ import AnimateOnScroll from "@/components/ui/AnimateOnScroll";
 import { ARTIST_INSTAGRAM } from "@/lib/constants";
 
 const placeholderImages = [
-  "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=400&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=400&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=400&fit=crop",
+  "https://desiaustralia.com/wp-content/uploads/2026/04/IMG_0714-scaled.jpg",
+  "https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20detail3%20photo%20Sahlan%20Hayes%201.jpg",
+  "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c982ee896b28a7e75b49f2_PatrickHunter_20.jpg",
+  "https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20with%20performers%202%20Photo%20Rhiannon%20Hopley.jpeg",
+  "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c983ace925fbc78da93111_PatrickHunter_16.jpg",
+  "https://desiaustralia.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-04-at-1.25.02-PM-1024x768.jpeg",
 ];
 
 export default function InstagramFeed() {
