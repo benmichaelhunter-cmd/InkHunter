@@ -44,10 +44,10 @@ export default function Header() {
           >
             <span
               className={clsx(
-                "font-display text-2xl font-bold tracking-tight transition-colors duration-300",
+                "font-display text-2xl lg:text-3xl font-bold tracking-tight transition-colors duration-300",
                 scrolled || !isHomepage || mobileOpen
                   ? "text-ocean-950"
-                  : "text-white"
+                  : "text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]"
               )}
             >
               InkHunter
@@ -67,14 +67,14 @@ export default function Header() {
                     <Link
                       href={link.href}
                       className={clsx(
-                        "relative px-4 py-2 text-sm font-medium transition-colors duration-200",
+                        "relative px-4 py-2 text-sm lg:text-base font-medium transition-colors duration-200",
                         scrolled || !isHomepage
                           ? isActive
                             ? "text-ocean-600"
                             : "text-gray-700 hover:text-ocean-600"
                           : isActive
-                            ? "text-white"
-                            : "text-white/80 hover:text-white"
+                            ? "text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]"
+                            : "text-white/90 hover:text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]"
                       )}
                     >
                       {link.label}
@@ -111,14 +111,14 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   className={clsx(
-                    "relative px-4 py-2 text-sm font-medium transition-colors duration-200 group",
+                    "relative px-4 py-2 text-sm lg:text-base font-medium transition-colors duration-200 group",
                     scrolled || !isHomepage
                       ? isActive
                         ? "text-ocean-600"
                         : "text-gray-700 hover:text-ocean-600"
                       : isActive
-                        ? "text-white"
-                        : "text-white/80 hover:text-white"
+                        ? "text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]"
+                        : "text-white/90 hover:text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]"
                   )}
                 >
                   {link.label}

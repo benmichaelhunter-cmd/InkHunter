@@ -63,9 +63,12 @@ export default function Hero() {
         <div
           className={`transition-all duration-1000 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <p className="text-white text-sm sm:text-base font-semibold tracking-[0.2em] uppercase mb-6 drop-shadow-lg">
-            Patrick Hunter &mdash; InkHunter
-          </p>
+          <div className="flex items-center gap-4 mb-6">
+            <span className="hidden sm:block w-12 h-px bg-ocean-300/70" />
+            <p className="text-white text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] uppercase drop-shadow-lg">
+              Patrick Hunter &mdash; InkHunter
+            </p>
+          </div>
         </div>
 
         <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
