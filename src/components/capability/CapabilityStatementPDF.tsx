@@ -107,17 +107,16 @@ const s = StyleSheet.create({
   },
 
   /* Cards (services, impacts) */
-  cardGrid: {
+  cardRow: {
     flexDirection: "row" as const,
-    flexWrap: "wrap" as const,
     gap: 10,
+    marginBottom: 10,
   },
   card: {
-    width: "48%",
+    flex: 1,
     backgroundColor: c.ocean50,
     borderRadius: 6,
     padding: 12,
-    marginBottom: 2,
   },
   cardTitle: {
     fontSize: 10,
@@ -276,6 +275,14 @@ const s = StyleSheet.create({
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
 /* ------------------------------------------------------------------ */
+function pairs<T>(arr: T[]): T[][] {
+  const result: T[][] = [];
+  for (let i = 0; i < arr.length; i += 2) {
+    result.push(arr.slice(i, i + 2));
+  }
+  return result;
+}
+
 function ImagePlaceholder({ label, width, height }: { label: string; width: number | string; height: number }) {
   return (
     <View style={[s.imagePlaceholder, { width, height }]}>
@@ -424,14 +431,16 @@ export default function CapabilityStatementPDF() {
         {/* Services */}
         <View style={s.section}>
           <SectionTitle>Services</SectionTitle>
-          <View style={s.cardGrid}>
-            {services.map((svc) => (
-              <View key={svc.title} style={s.card}>
-                <Text style={s.cardTitle}>{svc.title}</Text>
-                <Text style={s.cardDesc}>{svc.desc}</Text>
-              </View>
-            ))}
-          </View>
+          {pairs(services).map((row, ri) => (
+            <View key={ri} style={s.cardRow} wrap={false}>
+              {row.map((svc) => (
+                <View key={svc.title} style={s.card}>
+                  <Text style={s.cardTitle}>{svc.title}</Text>
+                  <Text style={s.cardDesc}>{svc.desc}</Text>
+                </View>
+              ))}
+            </View>
+          ))}
         </View>
 
         <Footer />
@@ -471,19 +480,21 @@ export default function CapabilityStatementPDF() {
             other investments can match.
           </Text>
 
-          <View style={s.cardGrid}>
-            {[
-              { title: "Economic Impact", desc: "Increases property values, drives foot traffic, and positions precincts as destinations.", bg: c.ochre50 },
-              { title: "Social Cohesion", desc: "Creates belonging, pride, and ownership through community-reflective artwork.", bg: c.ocean50 },
-              { title: "Environmental Awareness", desc: "Visual storytelling that demands political action and inspires behaviour change at scale.", bg: c.bush50 },
-              { title: "Wellbeing & Mental Health", desc: "Transforms everyday environments into spaces that nourish rather than deplete.", bg: c.sunset50 },
-            ].map((item) => (
-              <View key={item.title} style={[s.card, { backgroundColor: item.bg }]}>
-                <Text style={s.cardTitle}>{item.title}</Text>
-                <Text style={s.cardDesc}>{item.desc}</Text>
-              </View>
-            ))}
-          </View>
+          {pairs([
+            { title: "Economic Impact", desc: "Increases property values, drives foot traffic, and positions precincts as destinations.", bg: c.ochre50 },
+            { title: "Social Cohesion", desc: "Creates belonging, pride, and ownership through community-reflective artwork.", bg: c.ocean50 },
+            { title: "Environmental Awareness", desc: "Visual storytelling that demands political action and inspires behaviour change at scale.", bg: c.bush50 },
+            { title: "Wellbeing & Mental Health", desc: "Transforms everyday environments into spaces that nourish rather than deplete.", bg: c.sunset50 },
+          ]).map((row, ri) => (
+            <View key={ri} style={s.cardRow} wrap={false}>
+              {row.map((item) => (
+                <View key={item.title} style={[s.card, { backgroundColor: item.bg }]}>
+                  <Text style={s.cardTitle}>{item.title}</Text>
+                  <Text style={s.cardDesc}>{item.desc}</Text>
+                </View>
+              ))}
+            </View>
+          ))}
 
           <View style={s.quoteBlock}>
             <Text style={s.quoteText}>
