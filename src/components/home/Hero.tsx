@@ -23,12 +23,20 @@ export default function Hero() {
         sizes="100vw"
       />
 
-      {/* Animated Gradient Overlay */}
+      {/* Bottom gradient for text readability */}
       <div
-        className="absolute inset-0 animate-gradient-overlay"
+        className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(to top, rgba(7,42,73,0.95) 0%, rgba(7,42,73,0.7) 35%, rgba(7,42,73,0.15) 55%, rgba(7,42,73,0.05) 100%)",
+            "linear-gradient(to top, rgba(7,42,73,0.95) 0%, rgba(7,42,73,0.7) 35%, rgba(7,42,73,0.15) 55%, rgba(7,42,73,0.0) 70%)",
+        }}
+      />
+      {/* Top gradient for header readability */}
+      <div
+        className="absolute inset-x-0 top-0 h-32"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(7,42,73,0.7) 0%, rgba(7,42,73,0.0) 100%)",
         }}
       />
 
