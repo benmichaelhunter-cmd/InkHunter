@@ -1,34 +1,40 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import { useState } from "react";
-import { pdf } from "@react-pdf/renderer";
+import { useEffect, useState, useRef } from "react";
 import { Download, FileText, Loader2 } from "lucide-react";
 import Container from "@/components/ui/Container";
 
-const CapabilityStatementPDF = dynamic(
-  () => import("@/components/capability/CapabilityStatementPDF"),
-  { ssr: false }
-);
+async function generateAndDownload() {
+  const [{ default: Doc }, { pdf }] = await Promise.all([
+    import("@/components/capability/CapabilityStatementPDF"),
+    import("@react-pdf/renderer"),
+  ]);
+  const blob = await pdf(<Doc />).toBlob();
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "InkHunter-Capability-Statement.pdf";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
 
 export default function CapabilityStatementPage() {
   const [generating, setGenerating] = useState(false);
+  const autoTriggered = useRef(false);
+
+  // Auto-trigger download on first visit
+  useEffect(() => {
+    if (autoTriggered.current) return;
+    autoTriggered.current = true;
+    handleDownload();
+  }, []);
 
   async function handleDownload() {
     setGenerating(true);
     try {
-      const { default: Doc } = await import(
-        "@/components/capability/CapabilityStatementPDF"
-      );
-      const blob = await pdf(<Doc />).toBlob();
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "InkHunter-Capability-Statement.pdf";
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
+      await generateAndDownload();
     } finally {
       setGenerating(false);
     }

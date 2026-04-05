@@ -123,7 +123,7 @@ export default function Footer() {
               </li>
               <li className="pt-2">
                 <a
-                  href="/documents/inkhunter-capability-statement.pdf"
+                  href="/capability-statement"
                   className="inline-flex items-center gap-1 text-sm text-ochre-400 hover:text-ochre-300 transition-colors"
                 >
                   Download Capability Statement
