@@ -19,13 +19,20 @@ export default function Hero() {
         alt="Large-scale environmental mural artwork"
         fill
         priority
-        className="object-cover"
+        className="object-cover object-[30%_20%] md:object-center"
         sizes="100vw"
       />
 
-      {/* Bottom gradient for text readability */}
+      {/* Bottom gradient for text readability — stronger on mobile */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 md:hidden"
+        style={{
+          background:
+            "linear-gradient(to top, rgba(7,42,73,0.98) 0%, rgba(7,42,73,0.85) 40%, rgba(7,42,73,0.3) 60%, rgba(7,42,73,0.0) 75%)",
+        }}
+      />
+      <div
+        className="absolute inset-0 hidden md:block"
         style={{
           background:
             "linear-gradient(to top, rgba(7,42,73,0.95) 0%, rgba(7,42,73,0.7) 35%, rgba(7,42,73,0.15) 55%, rgba(7,42,73,0.0) 70%)",
@@ -59,7 +66,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-left px-6 sm:px-10 md:px-16 pb-24 max-w-3xl">
+      <div className="relative z-10 text-left px-6 sm:px-10 md:px-16 pb-28 md:pb-24 max-w-3xl w-full">
         <div
           className={`transition-all duration-1000 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
@@ -71,7 +78,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
+        <h1 className="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight drop-shadow-lg">
           {["Large-scale", "public art that", "transforms", "communities"].map(
             (word, i) => (
               <span
@@ -88,14 +95,14 @@ export default function Hero() {
         <div
           className={`transition-all duration-700 delay-[900ms] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
-          <p className="mt-6 text-lg sm:text-xl text-ocean-100 max-w-2xl leading-relaxed">
+          <p className="mt-4 md:mt-6 text-base sm:text-lg md:text-xl text-ocean-100 max-w-2xl leading-relaxed drop-shadow-md">
             Environmental murals and placemaking that connect people to place,
             nature, and each other.
           </p>
         </div>
 
         <div
-          className={`mt-10 flex flex-col sm:flex-row items-start gap-4 transition-all duration-700 delay-[1100ms] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+          className={`mt-6 md:mt-10 flex flex-row items-start gap-3 md:gap-4 transition-all duration-700 delay-[1100ms] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
           <Button href="/contact" variant="secondary" size="lg" className="!bg-white !text-ocean-950 hover:!bg-ocean-50 border-transparent shadow-2xl">
             Commission a Project
@@ -113,7 +120,7 @@ export default function Hero() {
 
       {/* Scroll Indicator */}
       <div
-        className={`absolute bottom-8 left-1/2 -translate-x-1/2 transition-all duration-700 delay-[1500ms] ${loaded ? "opacity-100" : "opacity-0"}`}
+        className={`absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block transition-all duration-700 delay-[1500ms] ${loaded ? "opacity-100" : "opacity-0"}`}
       >
         <div className="w-6 h-10 rounded-full border-2 border-white/30 flex justify-center pt-2">
           <div className="w-1 h-2.5 rounded-full bg-white/60 animate-bounce" />
