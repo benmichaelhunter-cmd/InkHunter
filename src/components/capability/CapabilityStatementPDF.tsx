@@ -397,7 +397,7 @@ export default function CapabilityStatementPDF() {
       author="Patrick Hunter — InkHunter"
       subject="Large-scale public art capability statement"
     >
-      {/* ============ PAGE 1: COVER + ABOUT + SERVICES ============ */}
+      {/* ============ PAGE 1: COVER + ABOUT ============ */}
       <Page size="A4" style={s.page}>
         {/* Cover band */}
         <View style={s.coverBand}>
@@ -428,8 +428,12 @@ export default function CapabilityStatementPDF() {
           </Text>
         </View>
 
-        {/* Services */}
-        <View style={s.section}>
+        <Footer />
+      </Page>
+
+      {/* ============ PAGE 2: SERVICES ============ */}
+      <Page size="A4" style={s.page}>
+        <View style={[s.section, { marginTop: 40 }]}>
           <SectionTitle>Services</SectionTitle>
           {pairs(services).map((row, ri) => (
             <View key={ri} style={s.cardRow} wrap={false}>
@@ -446,7 +450,7 @@ export default function CapabilityStatementPDF() {
         <Footer />
       </Page>
 
-      {/* ============ PAGE 2: KEY PROJECTS ============ */}
+      {/* ============ PAGE 3: KEY PROJECTS ============ */}
       <Page size="A4" style={s.page}>
         <View style={[s.section, { marginTop: 40 }]}>
           <SectionTitle>Key Projects</SectionTitle>

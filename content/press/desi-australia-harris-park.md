@@ -1,8 +1,8 @@
 ---
-title: "Harris Park Mural Celebrates Little India's Cultural Heritage"
+title: "Harris Park's Little India Transformed by Largest Mural in Parramatta"
 publication: "Desi Australia"
-date: "2026-03-01"
-url: "#"
+date: "2026-04-01"
+url: "https://desiaustralia.com/lifestyle/arts-culture/harris-parks-little-india-transformed-by-largest-mural-in-parramatta/"
 excerpt: "A 100-metre mural along Station Street East captures the essence of Harris Park's Indian-Australian community through a stunning visual narrative from sunrise to nightfall."
-coverImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&h=600&fit=crop"
+coverImage: "https://desiaustralia.com/wp-content/uploads/2026/04/IMG_0714-scaled.jpg"
 ---
