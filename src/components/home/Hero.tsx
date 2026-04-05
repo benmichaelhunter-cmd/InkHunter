@@ -15,7 +15,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
-        src="https://desiaustralia.com/wp-content/uploads/2026/04/IMG_0714-scaled.jpg"
+        src="https://assets.atdw-online.com.au/images/6e0e3b2099fe3bba68ff547ec6040368.jpeg?rect=0%2C607%2C2082%2C1562&w=1600&h=1200&rot=360"
         alt="Large-scale environmental mural artwork"
         fill
         priority
