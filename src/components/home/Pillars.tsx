@@ -12,28 +12,25 @@ const iconMap: Record<string, React.ReactNode> = {
 
 const colorMap: Record<
   string,
-  { gradient: string; iconBg: string; iconText: string; accent: string; number: string }
+  { gradient: string; iconBg: string; iconText: string; accent: string }
 > = {
   Environment: {
     gradient: "from-bush-50 via-white to-bush-50/50",
     iconBg: "bg-bush-100",
     iconText: "text-bush-600",
     accent: "bg-bush-500",
-    number: "text-bush-200",
   },
   Community: {
     gradient: "from-ocean-50 via-white to-ocean-50/50",
     iconBg: "bg-ocean-100",
     iconText: "text-ocean-600",
     accent: "bg-ocean-500",
-    number: "text-ocean-200",
   },
   Wellbeing: {
     gradient: "from-sunset-50 via-white to-sunset-50/50",
     iconBg: "bg-sunset-100",
     iconText: "text-sunset-600",
     accent: "bg-sunset-500",
-    number: "text-sunset-200",
   },
 };
 
@@ -59,13 +56,6 @@ export default function Pillars() {
                   <div
                     className={`relative p-8 lg:p-10 rounded-3xl bg-gradient-to-br ${colors.gradient} border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 h-full overflow-hidden`}
                   >
-                    {/* Background number watermark */}
-                    <span
-                      className={`absolute top-6 right-6 text-[6rem] font-display font-bold ${colors.number} opacity-30 leading-none select-none pointer-events-none transition-transform duration-500 group-hover:scale-105`}
-                    >
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-
                     {/* Accent bar */}
                     <div
                       className={`w-10 h-1 ${colors.accent} rounded-full mb-8 transition-all duration-500 group-hover:w-16`}
