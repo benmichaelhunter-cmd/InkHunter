@@ -28,7 +28,7 @@ export default function Header() {
     <header
       className={clsx(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled
+        scrolled || mobileOpen
           ? "bg-white/95 backdrop-blur-md shadow-sm"
           : isHomepage
             ? "bg-transparent"
@@ -45,7 +45,7 @@ export default function Header() {
             <span
               className={clsx(
                 "font-display text-2xl font-bold tracking-tight transition-colors duration-300",
-                scrolled || !isHomepage
+                scrolled || !isHomepage || mobileOpen
                   ? "text-ocean-950"
                   : "text-white"
               )}
@@ -144,7 +144,7 @@ export default function Header() {
             onClick={() => setMobileOpen(!mobileOpen)}
             className={clsx(
               "lg:hidden p-2 rounded-lg transition-colors",
-              scrolled || !isHomepage
+              scrolled || !isHomepage || mobileOpen
                 ? "text-gray-700 hover:bg-gray-100"
                 : "text-white hover:bg-white/10"
             )}
@@ -155,21 +155,21 @@ export default function Header() {
               <span
                 className={clsx(
                   "w-full h-0.5 rounded-full transition-all duration-300 origin-center",
-                  scrolled || !isHomepage ? "bg-gray-700" : "bg-white",
+                  scrolled || !isHomepage || mobileOpen ? "bg-gray-700" : "bg-white",
                   mobileOpen && "rotate-45 translate-y-[9px]"
                 )}
               />
               <span
                 className={clsx(
                   "w-full h-0.5 rounded-full transition-all duration-300",
-                  scrolled || !isHomepage ? "bg-gray-700" : "bg-white",
+                  scrolled || !isHomepage || mobileOpen ? "bg-gray-700" : "bg-white",
                   mobileOpen && "opacity-0"
                 )}
               />
               <span
                 className={clsx(
                   "w-full h-0.5 rounded-full transition-all duration-300 origin-center",
-                  scrolled || !isHomepage ? "bg-gray-700" : "bg-white",
+                  scrolled || !isHomepage || mobileOpen ? "bg-gray-700" : "bg-white",
                   mobileOpen && "-rotate-45 -translate-y-[9px]"
                 )}
               />
