@@ -66,7 +66,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-left px-5 sm:px-10 md:px-16 pb-10 md:pb-24 max-w-3xl w-full">
+      <div className="relative z-10 text-left px-5 sm:px-10 md:px-16 pb-16 md:pb-24 max-w-3xl w-full">
         <div
           className={`transition-all duration-1000 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
@@ -104,14 +104,14 @@ export default function Hero() {
         <div
           className={`mt-6 md:mt-10 flex flex-row items-start gap-3 md:gap-4 transition-all duration-700 delay-[1100ms] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
-          <Button href="/contact" variant="secondary" size="md" className="!bg-white !text-ocean-950 hover:!bg-ocean-50 border-transparent shadow-2xl md:!px-6 md:!py-3 md:!text-base text-sm">
+          <Button href="/contact" variant="secondary" size="md" className="!bg-white !text-ocean-950 hover:!bg-ocean-50 border-transparent shadow-2xl md:!px-6 md:!py-3 md:!text-base !text-xs !px-4 !py-2.5 whitespace-nowrap">
             Commission a Project
           </Button>
           <Button
             href="/projects"
             variant="outline"
             size="md"
-            className="border-white/40 text-white hover:bg-white/10 hover:border-white/60 md:!px-6 md:!py-3 md:!text-base text-sm"
+            className="border-white/40 text-white hover:bg-white/10 hover:border-white/60 md:!px-6 md:!py-3 md:!text-base !text-xs !px-4 !py-2.5 whitespace-nowrap"
           >
             View Portfolio
           </Button>
