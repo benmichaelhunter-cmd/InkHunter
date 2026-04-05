@@ -17,6 +17,7 @@ export default function VideoFeature() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setVisible(true);
+          setPlaying(true);
           observer.disconnect();
         }
       },
@@ -66,7 +67,7 @@ export default function VideoFeature() {
                 {playing ? (
                   <iframe
                     className="absolute inset-0 w-full h-full"
-                    src="https://www.youtube.com/embed/sAWdFiPQErY?autoplay=1&rel=0&modestbranding=1"
+                    src="https://www.youtube.com/embed/sAWdFiPQErY?autoplay=1&mute=1&loop=1&playlist=sAWdFiPQErY&rel=0&modestbranding=1"
                     title="7 News Australia with Plastic Free Beaches"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
