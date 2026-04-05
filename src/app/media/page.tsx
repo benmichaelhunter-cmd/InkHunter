@@ -28,7 +28,12 @@ export default async function MediaPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {pressItems.map((item, i) => (
             <AnimateOnScroll key={item.slug} delay={i * 80}>
-              <article className="group border border-gray-200 rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+              <a
+                href={item.url || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group border border-gray-200 rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 h-full flex flex-col cursor-pointer"
+              >
                 {item.coverImage && (
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <Image
@@ -60,19 +65,12 @@ export default async function MediaPage() {
                   <p className="text-gray-600 text-sm flex-1 mb-4">
                     {item.excerpt}
                   </p>
-                  {item.url && (
-                    <a
-                      href={item.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-sm font-semibold text-ocean-600 hover:text-ocean-700 transition-colors"
-                    >
-                      Read article
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  )}
+                  <span className="inline-flex items-center gap-1 text-sm font-semibold text-ocean-600 group-hover:text-ocean-700 transition-colors">
+                    Read article
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </span>
                 </div>
-              </article>
+              </a>
             </AnimateOnScroll>
           ))}
         </div>
