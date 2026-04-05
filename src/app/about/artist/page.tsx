@@ -78,23 +78,21 @@ export default function ArtistPage() {
         </AnimateOnScroll>
 
         {/* Awards, Education, Credentials */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mt-24">
           {/* Awards */}
           <AnimateOnScroll delay={0}>
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-lg bg-ochre-50 text-ochre-600 flex items-center justify-center">
-                  <Award className="w-5 h-5" />
-                </div>
-                <h2 className="font-display text-xl font-bold text-ocean-950">
-                  Awards
-                </h2>
+            <div className="group relative h-full rounded-3xl bg-gradient-to-br from-ochre-50 via-white to-ochre-50/30 border border-ochre-100 p-8 lg:p-10 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+              <div className="w-12 h-12 rounded-2xl bg-ochre-100 text-ochre-600 flex items-center justify-center mb-6 transition-transform duration-500 group-hover:scale-110">
+                <Award className="w-6 h-6" strokeWidth={1.5} />
               </div>
-              <ul className="space-y-4">
+              <h2 className="font-display text-2xl font-bold text-ocean-950 mb-6">
+                Awards
+              </h2>
+              <ul className="space-y-5">
                 {awards.map((award) => (
-                  <li key={award.title}>
-                    <p className="font-semibold text-ocean-900">{award.title}</p>
-                    <p className="text-sm text-gray-500">
+                  <li key={award.title} className="relative pl-4 border-l-2 border-ochre-200">
+                    <p className="font-semibold text-ocean-900 leading-snug">{award.title}</p>
+                    <p className="text-sm text-gray-500 mt-1">
                       {award.year} — {award.description}
                     </p>
                   </li>
@@ -105,20 +103,18 @@ export default function ArtistPage() {
 
           {/* Education */}
           <AnimateOnScroll delay={100}>
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-lg bg-ocean-50 text-ocean-600 flex items-center justify-center">
-                  <GraduationCap className="w-5 h-5" />
-                </div>
-                <h2 className="font-display text-xl font-bold text-ocean-950">
-                  Education
-                </h2>
+            <div className="group relative h-full rounded-3xl bg-gradient-to-br from-ocean-50 via-white to-ocean-50/30 border border-ocean-100 p-8 lg:p-10 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+              <div className="w-12 h-12 rounded-2xl bg-ocean-100 text-ocean-600 flex items-center justify-center mb-6 transition-transform duration-500 group-hover:scale-110">
+                <GraduationCap className="w-6 h-6" strokeWidth={1.5} />
               </div>
-              <ul className="space-y-4">
+              <h2 className="font-display text-2xl font-bold text-ocean-950 mb-6">
+                Education
+              </h2>
+              <ul className="space-y-5">
                 {education.map((edu) => (
-                  <li key={edu.title}>
-                    <p className="font-semibold text-ocean-900">{edu.title}</p>
-                    <p className="text-sm text-gray-500">{edu.institution}</p>
+                  <li key={edu.title} className="relative pl-4 border-l-2 border-ocean-200">
+                    <p className="font-semibold text-ocean-900 leading-snug">{edu.title}</p>
+                    <p className="text-sm text-gray-500 mt-1">{edu.institution}</p>
                   </li>
                 ))}
               </ul>
@@ -127,23 +123,21 @@ export default function ArtistPage() {
 
           {/* Credentials */}
           <AnimateOnScroll delay={200}>
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-lg bg-bush-50 text-bush-600 flex items-center justify-center">
-                  <Anchor className="w-5 h-5" />
-                </div>
-                <h2 className="font-display text-xl font-bold text-ocean-950">
-                  Beyond the Studio
-                </h2>
+            <div className="group relative h-full rounded-3xl bg-gradient-to-br from-bush-50 via-white to-bush-50/30 border border-bush-100 p-8 lg:p-10 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+              <div className="w-12 h-12 rounded-2xl bg-bush-100 text-bush-600 flex items-center justify-center mb-6 transition-transform duration-500 group-hover:scale-110">
+                <Anchor className="w-6 h-6" strokeWidth={1.5} />
               </div>
-              <ul className="space-y-3">
+              <h2 className="font-display text-2xl font-bold text-ocean-950 mb-6">
+                Beyond the Studio
+              </h2>
+              <ul className="space-y-4">
                 {credentials.map((cred) => (
                   <li
                     key={cred}
-                    className="text-gray-600 flex items-start gap-2"
+                    className="text-gray-600 flex items-start gap-3"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-bush-400 mt-2 flex-shrink-0" />
-                    {cred}
+                    <span className="w-2 h-2 rounded-full bg-bush-400 mt-1.5 flex-shrink-0" />
+                    <span className="leading-snug">{cred}</span>
                   </li>
                 ))}
               </ul>
