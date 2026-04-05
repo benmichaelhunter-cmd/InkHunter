@@ -63,7 +63,7 @@ export default function Hero() {
         <div
           className={`transition-all duration-1000 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <p className="text-ocean-200 text-sm sm:text-base font-semibold tracking-[0.2em] uppercase mb-6">
+          <p className="text-white text-sm sm:text-base font-semibold tracking-[0.2em] uppercase mb-6 drop-shadow-lg">
             Patrick Hunter &mdash; InkHunter
           </p>
         </div>
