@@ -19,7 +19,7 @@ export default function Hero() {
         alt="Large-scale environmental mural artwork"
         fill
         priority
-        className="object-cover object-[30%_20%] md:object-center"
+        className="object-cover object-[30%_15%] md:object-center"
         sizes="100vw"
       />
 
@@ -28,7 +28,7 @@ export default function Hero() {
         className="absolute inset-0 md:hidden"
         style={{
           background:
-            "linear-gradient(to top, rgba(7,42,73,0.98) 0%, rgba(7,42,73,0.85) 40%, rgba(7,42,73,0.3) 60%, rgba(7,42,73,0.0) 75%)",
+            "linear-gradient(to top, rgba(7,42,73,0.98) 0%, rgba(7,42,73,0.9) 30%, rgba(7,42,73,0.4) 45%, rgba(7,42,73,0.0) 55%)",
         }}
       />
       <div
@@ -66,13 +66,13 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-left px-6 sm:px-10 md:px-16 pb-28 md:pb-24 max-w-3xl w-full">
+      <div className="relative z-10 text-left px-5 sm:px-10 md:px-16 pb-10 md:pb-24 max-w-3xl w-full">
         <div
           className={`transition-all duration-1000 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <div className="flex items-center gap-4 mb-6">
             <span className="hidden sm:block w-12 h-px bg-ocean-300/70" />
-            <p className="text-white text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] uppercase drop-shadow-lg">
+            <p className="text-white text-xs sm:text-base md:text-lg font-semibold tracking-[0.2em] uppercase drop-shadow-lg">
               Patrick Hunter &mdash; InkHunter
             </p>
           </div>
@@ -95,7 +95,7 @@ export default function Hero() {
         <div
           className={`transition-all duration-700 delay-[900ms] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
-          <p className="mt-4 md:mt-6 text-base sm:text-lg md:text-xl text-ocean-100 max-w-2xl leading-relaxed drop-shadow-md">
+          <p className="mt-3 md:mt-6 text-sm sm:text-lg md:text-xl text-ocean-100 max-w-2xl leading-relaxed drop-shadow-md">
             Environmental murals and placemaking that connect people to place,
             nature, and each other.
           </p>
@@ -104,14 +104,14 @@ export default function Hero() {
         <div
           className={`mt-6 md:mt-10 flex flex-row items-start gap-3 md:gap-4 transition-all duration-700 delay-[1100ms] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
-          <Button href="/contact" variant="secondary" size="lg" className="!bg-white !text-ocean-950 hover:!bg-ocean-50 border-transparent shadow-2xl">
+          <Button href="/contact" variant="secondary" size="md" className="!bg-white !text-ocean-950 hover:!bg-ocean-50 border-transparent shadow-2xl md:!px-6 md:!py-3 md:!text-base text-sm">
             Commission a Project
           </Button>
           <Button
             href="/projects"
             variant="outline"
-            size="lg"
-            className="border-white/40 text-white hover:bg-white/10 hover:border-white/60"
+            size="md"
+            className="border-white/40 text-white hover:bg-white/10 hover:border-white/60 md:!px-6 md:!py-3 md:!text-base text-sm"
           >
             View Portfolio
           </Button>
