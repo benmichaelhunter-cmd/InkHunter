@@ -15,8 +15,8 @@ export default async function Home() {
       <Hero />
       <WaveDivider color="#ffffff" />
       <Pillars />
-      {featuredProject && <FeaturedProject project={featuredProject} />}
       <VideoFeature />
+      {featuredProject && <FeaturedProject project={featuredProject} />}
       <TrustBadges />
       <InstagramFeed />
     </>
