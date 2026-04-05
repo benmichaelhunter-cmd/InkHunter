@@ -35,6 +35,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "assets.atdw-online.com.au",
       },
+      {
+        protocol: "https",
+        hostname: "www.ecovoice.com.au",
+      },
     ],
   },
 };
