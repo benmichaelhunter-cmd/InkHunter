@@ -9,8 +9,8 @@ const placeholderImages = [
   "https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20detail3%20photo%20Sahlan%20Hayes%201.jpg",
   "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c982ee896b28a7e75b49f2_PatrickHunter_20.jpg",
   "https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20with%20performers%202%20Photo%20Rhiannon%20Hopley.jpeg",
-  "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c983ace925fbc78da93111_PatrickHunter_16.jpg",
-  "https://desiaustralia.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-04-at-1.25.02-PM-1024x768.jpeg",
+  "https://thebigpicturefest.com/wp-content/uploads/2024/08/INK-HUNTER1.jpg",
+  "https://thebigpicturefest.com/wp-content/uploads/2024/08/INK-HUNTER2.jpg",
 ];
 
 export default function InstagramFeed() {

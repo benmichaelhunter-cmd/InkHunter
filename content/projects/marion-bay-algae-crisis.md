@@ -6,10 +6,10 @@ location: "Marion Bay, South Australia"
 year: 2025
 client: "Community-supported"
 featured: false
-coverImage: "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=1200&h=800&fit=crop"
+coverImage: "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c983ef1b0243ac26bae327_PatrickHunter_14.jpg"
 galleryImages:
-  - "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop"
-  - "https://images.unsplash.com/photo-1454991727061-be514eae86f7?w=800&h=600&fit=crop"
+  - "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c984077e91d92aa19b6f21_PatrickHunter_13.jpg"
+  - "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c9842c94615ead72d6bc31_PatrickHunter_12.jpg"
 brief: "A self-initiated response to South Australia's toxic algae bloom — travelling 16,000 km to donate time and paint, creating an underwater 'coat of arms' featuring threatened marine species."
 tags: ["environmental", "advocacy", "marine", "self-initiated", "Great Southern Reef"]
 ---

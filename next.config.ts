@@ -27,6 +27,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "www.parranews.com.au",
       },
+      {
+        protocol: "https",
+        hostname: "thebigpicturefest.com",
+      },
     ],
   },
 };

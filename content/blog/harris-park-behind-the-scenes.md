@@ -2,7 +2,7 @@
 title: "Behind the Scenes: Harris Park Cultural Precinct"
 date: "2026-03-15"
 excerpt: "A look inside the creation of Parramatta's largest mural — from community consultation workshops to the final brushstroke on 100+ metres of Station Street East."
-coverImage: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&h=600&fit=crop"
+coverImage: "https://desiaustralia.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-04-at-1.25.02-PM-1024x768.jpeg"
 tags: ["process", "Harris Park", "community", "behind-the-scenes"]
 published: true
 ---

@@ -6,10 +6,10 @@ location: "Maitland, NSW"
 year: 2022
 client: "Maitland City Council"
 featured: false
-coverImage: "https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=1200&h=800&fit=crop"
+coverImage: "https://thebigpicturefest.com/wp-content/uploads/2024/08/INK-HUNTER1.jpg"
 galleryImages:
-  - "https://images.unsplash.com/photo-1482160549825-59d1b23cb208?w=800&h=600&fit=crop"
-  - "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=800&h=600&fit=crop"
+  - "https://thebigpicturefest.com/wp-content/uploads/2024/08/INK-HUNTER2.jpg"
+  - "https://thebigpicturefest.com/wp-content/uploads/2024/11/2024-newcastle-INK-HUNTER.jpg"
 brief: "The first of seven laneways transformed through Maitland's Maitlanes project — a mural exploring environmental impact and the legacy we leave behind."
 testimonial:
   quote: "Patrick's work set the tone for the entire Maitlanes project. His combination of environmental messaging with genuine artistic beauty showed what was possible when you invest in public art."

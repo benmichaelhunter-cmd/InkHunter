@@ -343,14 +343,14 @@ const projects = [
     year: "2025",
     client: "Self-initiated, community-supported",
     desc: "16,000 km journey to South Australia. Underwater 'coat of arms' featuring Leafy Sea Dragon and Giant Australian Cuttlefish. Supported by Great Southern Reef Foundation. National media coverage.",
-    image: null,
+    image: "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c983ef1b0243ac26bae327_PatrickHunter_14.jpg",
   },
   {
     title: "Passing On — Maitland",
     year: "2022",
     client: "Maitland City Council",
     desc: "First of seven Maitlanes project laneways. Environmental themes with native trees and flowing gum leaves. 100% renewable Colormaker paints. Set the creative benchmark for subsequent laneways.",
-    image: null,
+    image: "https://thebigpicturefest.com/wp-content/uploads/2024/08/INK-HUNTER1.jpg",
   },
   {
     title: "Manly Vibes",

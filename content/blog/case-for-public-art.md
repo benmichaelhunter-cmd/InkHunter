@@ -2,7 +2,7 @@
 title: "The Case for Public Art in Australian Cities"
 date: "2026-01-20"
 excerpt: "Why councils and government bodies should invest in large-scale public art — the evidence for economic, social, and wellbeing outcomes that transform communities."
-coverImage: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=600&fit=crop"
+coverImage: "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c983cd642b2223fe1afe67_PatrickHunter_15.jpg"
 tags: ["opinion", "public art", "placemaking", "government"]
 published: true
 ---
