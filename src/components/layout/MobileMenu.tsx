@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { clsx } from "clsx";
 import { NAV_LINKS, ARTIST_EMAIL, ARTIST_INSTAGRAM } from "@/lib/constants";
@@ -38,9 +39,13 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       >
         <div className="flex flex-col h-full pt-8 pb-8 px-6">
           <div className="mb-6 px-4">
-            <span className="font-display text-2xl font-bold tracking-tight text-ocean-950">
-              InkHunter
-            </span>
+            <Image
+              src="/images/LOGO_Skull.png"
+              alt="InkHunter"
+              width={40}
+              height={40}
+              className="w-10 h-10"
+            />
           </div>
           <nav className="flex-1 space-y-1">
             {NAV_LINKS.map((link) => {
