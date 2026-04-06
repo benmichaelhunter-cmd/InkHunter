@@ -38,20 +38,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2">
-              <Image
-                src="/images/LOGO_Skull.png"
-                alt=""
-                width={36}
-                height={36}
-                className="w-9 h-9 invert brightness-200"
-              />
+            <Link href="/">
               <Image
                 src="/images/LOGO_InkHunter.png"
                 alt={SITE_NAME}
-                width={120}
-                height={36}
-                className="h-8 w-auto invert brightness-200"
+                width={160}
+                height={46}
+                className="h-10 w-auto invert brightness-200"
               />
             </Link>
             <p className="mt-3 text-ocean-300 text-sm leading-relaxed">

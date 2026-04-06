@@ -45,24 +45,12 @@ export default function Header() {
             className="flex items-center gap-2 group"
           >
             <Image
-              src="/images/LOGO_Skull.png"
-              alt=""
-              width={40}
-              height={40}
-              className={clsx(
-                "w-9 h-9 lg:w-10 lg:h-10 transition-all duration-300",
-                scrolled || !isHomepage || mobileOpen
-                  ? ""
-                  : "invert brightness-200 drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]"
-              )}
-            />
-            <Image
               src="/images/LOGO_InkHunter.png"
               alt="InkHunter"
-              width={140}
-              height={40}
+              width={180}
+              height={50}
               className={clsx(
-                "h-8 lg:h-9 w-auto transition-all duration-300",
+                "h-10 lg:h-12 w-auto transition-all duration-300",
                 scrolled || !isHomepage || mobileOpen
                   ? ""
                   : "invert brightness-200 drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]"

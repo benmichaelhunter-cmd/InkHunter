@@ -569,7 +569,7 @@ export default function CapabilityStatementPDF() {
         {/* Process image */}
         <View style={[s.section, { marginTop: 14 }]}>
           <PdfImage
-            src="/images/projects/shallow-iridescence/shallow-iridescence_performers.jpeg"
+            src="/images/projects/shallow-iridescence/shallow-iridescence_detail3.jpg"
             style={{ width: "100%", height: 100, objectFit: "cover" as const, borderRadius: 4 }}
           />
         </View>
