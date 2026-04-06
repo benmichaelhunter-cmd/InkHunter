@@ -80,7 +80,7 @@ export default function VideoFeature() {
                   >
                     {visible && (
                       <Image
-                        src="https://i.ytimg.com/vi/sAWdFiPQErY/maxresdefault.jpg"
+                        src="/images/press/7news_youtube-maxres.jpg"
                         alt="7 News Australia with Plastic Free Beaches"
                         fill
                         className="object-cover"

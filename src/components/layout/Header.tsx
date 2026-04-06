@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { clsx } from "clsx";
 import { NAV_LINKS } from "@/lib/constants";
@@ -25,6 +26,7 @@ export default function Header() {
   const isHomepage = pathname === "/";
 
   return (
+    <>
     <header
       className={clsx(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
@@ -42,16 +44,30 @@ export default function Header() {
             href="/"
             className="flex items-center gap-2 group"
           >
-            <span
+            <Image
+              src="/images/LOGO_Skull.png"
+              alt=""
+              width={40}
+              height={40}
               className={clsx(
-                "font-display text-2xl lg:text-3xl font-bold tracking-tight transition-colors duration-300",
+                "w-9 h-9 lg:w-10 lg:h-10 transition-all duration-300",
                 scrolled || !isHomepage || mobileOpen
-                  ? "text-ocean-950"
-                  : "text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]"
+                  ? ""
+                  : "invert brightness-200 drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]"
               )}
-            >
-              InkHunter
-            </span>
+            />
+            <Image
+              src="/images/LOGO_InkHunter.png"
+              alt="InkHunter"
+              width={140}
+              height={40}
+              className={clsx(
+                "h-8 lg:h-9 w-auto transition-all duration-300",
+                scrolled || !isHomepage || mobileOpen
+                  ? ""
+                  : "invert brightness-200 drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]"
+              )}
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -178,7 +194,9 @@ export default function Header() {
         </div>
       </nav>
 
-      <MobileMenu isOpen={mobileOpen} onClose={() => setMobileOpen(false)} />
     </header>
+
+    <MobileMenu isOpen={mobileOpen} onClose={() => setMobileOpen(false)} />
+    </>
   );
 }

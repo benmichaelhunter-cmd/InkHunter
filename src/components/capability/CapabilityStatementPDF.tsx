@@ -329,35 +329,35 @@ const projects = [
     year: "2026",
     client: "City of Parramatta",
     desc: "100+ metre mural celebrating Little India — migration stories, shared meals, festivals, native wildlife, and river connectivity. Created with co-artists Gauri Torgalkar and Em Hatton. National media coverage and increased foot traffic.",
-    image: "https://desiaustralia.com/wp-content/uploads/2026/04/IMG_0714-1024x679.jpg",
+    image: "/images/projects/harris-park/harris-park_main-mural-scaled.jpg",
   },
   {
     title: "Shallow Iridescence",
     year: "2023",
     client: "Australian National Maritime Museum",
     desc: "Perspective mural revealing a giant blue-ringed octopus from Pyrmont Bridge. Collaboration with First Nations curator Tyson Frigo and team. Led to the 'Octopus Garden' digital experience commission.",
-    image: "https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20detail3%20photo%20Sahlan%20Hayes%201.jpg",
+    image: "/images/projects/shallow-iridescence/shallow-iridescence_detail1.jpg",
   },
   {
     title: "Marion Bay Algae Crisis Mural",
     year: "2025",
     client: "Self-initiated, community-supported",
     desc: "16,000 km journey to South Australia. Underwater 'coat of arms' featuring Leafy Sea Dragon and Giant Australian Cuttlefish. Supported by Great Southern Reef Foundation. National media coverage.",
-    image: "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c983ef1b0243ac26bae327_PatrickHunter_14.jpg",
+    image: "/images/projects/marion-bay/marion-bay_PatrickHunter_14.jpg",
   },
   {
     title: "Passing On — Maitland",
     year: "2022",
     client: "Maitland City Council",
     desc: "First of seven Maitlanes project laneways. Environmental themes with native trees and flowing gum leaves. 100% renewable Colormaker paints. Set the creative benchmark for subsequent laneways.",
-    image: "https://assets.atdw-online.com.au/images/6e0e3b2099fe3bba68ff547ec6040368.jpeg?rect=0%2C607%2C2082%2C1562&w=1600&h=1200&rot=360",
+    image: "/images/projects/passing-on/passing-on_main.jpeg",
   },
   {
     title: "Manly Vibes",
     year: "2019",
     client: "Northern Beaches Council",
     desc: "Award-winning coastal celebration. Won Australian Street Art Awards Utility Award 2019. Continues as the most photographed piece on Sydney's Northern Beaches.",
-    image: "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c982ee896b28a7e75b49f2_PatrickHunter_20.jpg",
+    image: "/images/projects/manly-vibes/manly-vibes_PatrickHunter_20.jpg",
   },
 ];
 
@@ -410,7 +410,7 @@ export default function CapabilityStatementPDF() {
           </Text>
           <View style={{ marginTop: 16 }}>
             <PdfImage
-              src="https://desiaustralia.com/wp-content/uploads/2026/04/IMG_0714-1024x679.jpg"
+              src="/images/projects/harris-park/harris-park_main-mural-scaled.jpg"
               style={{ width: "100%", height: 160, objectFit: "cover" as const, borderRadius: 4 }}
             />
           </View>
@@ -569,7 +569,7 @@ export default function CapabilityStatementPDF() {
         {/* Process image */}
         <View style={[s.section, { marginTop: 14 }]}>
           <PdfImage
-            src="https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20with%20performers%202%20Photo%20Rhiannon%20Hopley.jpeg"
+            src="/images/projects/shallow-iridescence/shallow-iridescence_performers.jpeg"
             style={{ width: "100%", height: 100, objectFit: "cover" as const, borderRadius: 4 }}
           />
         </View>

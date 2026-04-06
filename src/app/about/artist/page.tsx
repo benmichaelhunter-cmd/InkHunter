@@ -22,7 +22,7 @@ export default function ArtistPage() {
           <AnimateOnScroll>
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c98384604a2b9b6b5a6512_PatrickHunter_17.jpg"
+                src="/images/artist/artist_portrait_PatrickHunter_17.jpg"
                 alt="Patrick Hunter — InkHunter artist"
                 fill
                 className="object-cover"

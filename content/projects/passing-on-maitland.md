@@ -6,11 +6,13 @@ location: "Maitland, NSW"
 year: 2022
 client: "Maitland City Council"
 featured: false
-coverImage: "https://assets.atdw-online.com.au/images/6e0e3b2099fe3bba68ff547ec6040368.jpeg?rect=0%2C607%2C2082%2C1562&w=1600&h=1200&rot=360"
+coverImage: "/images/projects/passing-on/passing-on_main.jpeg"
 galleryImages:
-  - "https://assets.atdw-online.com.au/images/35cc67cda6cf5e9e66f8539b4e22cd35.jpeg?rect=0%2C607%2C2082%2C1562&w=1600&h=1200&rot=360"
-  - "https://assets.atdw-online.com.au/images/98618d0362b50ad1120feedc3d2e7715.jpeg?rect=0%2C607%2C2082%2C1562&w=1600&h=1200&rot=360"
-  - "https://assets.atdw-online.com.au/images/e30227f8ec8b4d502b89ff33878edc96.jpeg?rect=0%2C607%2C2082%2C1562&w=1600&h=1200&rot=360"
+  - "/images/projects/passing-on/passing-on_detail1.jpeg"
+  - "/images/projects/passing-on/passing-on_detail2.jpeg"
+  - "/images/projects/passing-on/passing-on_detail3.jpeg"
+  - "/images/projects/passing-on/passing-on_detail4.jpeg"
+  - "/images/projects/passing-on/passing-on_detail5.jpeg"
 brief: "The first of seven laneways transformed through Maitland's Maitlanes project — a mural exploring environmental impact and the legacy we leave behind."
 testimonial:
   quote: "Patrick's work set the tone for the entire Maitlanes project. His combination of environmental messaging with genuine artistic beauty showed what was possible when you invest in public art."

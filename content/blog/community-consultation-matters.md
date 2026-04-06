@@ -2,7 +2,7 @@
 title: "Why Community Consultation Makes Better Murals"
 date: "2025-09-05"
 excerpt: "A mural painted without community input is just decoration. Here's how genuine consultation transforms public art from something people walk past into something they protect."
-coverImage: "https://www.parranews.com.au/wp-content/uploads/2026/04/IMG_7041-scaled.jpg"
+coverImage: "/images/projects/harris-park/harris-park_parranews-IMG7041.jpg"
 tags: ["community", "process", "placemaking", "consultation"]
 published: true
 ---

@@ -5,12 +5,12 @@ import AnimateOnScroll from "@/components/ui/AnimateOnScroll";
 import { ARTIST_INSTAGRAM } from "@/lib/constants";
 
 const placeholderImages = [
-  "https://desiaustralia.com/wp-content/uploads/2026/04/IMG_0714-scaled.jpg",
-  "https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20detail3%20photo%20Sahlan%20Hayes%201.jpg",
-  "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c982ee896b28a7e75b49f2_PatrickHunter_20.jpg",
-  "https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20with%20performers%202%20Photo%20Rhiannon%20Hopley.jpeg",
-  "https://thebigpicturefest.com/wp-content/uploads/2024/08/INK-HUNTER1.jpg",
-  "https://thebigpicturefest.com/wp-content/uploads/2024/08/INK-HUNTER2.jpg",
+  "/images/projects/harris-park/harris-park_main-mural-scaled.jpg",
+  "/images/projects/shallow-iridescence/shallow-iridescence_detail1.jpg",
+  "/images/projects/manly-vibes/manly-vibes_PatrickHunter_20.jpg",
+  "/images/projects/shallow-iridescence/shallow-iridescence_performers.jpeg",
+  "/images/projects/big-picture-fest/big-picture-fest_INK-HUNTER1.jpg",
+  "/images/projects/big-picture-fest/big-picture-fest_INK-HUNTER2.jpg",
 ];
 
 export default function InstagramFeed() {

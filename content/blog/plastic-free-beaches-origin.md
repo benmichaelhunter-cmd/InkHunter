@@ -2,7 +2,7 @@
 title: "How Plastic Free Beaches Started on a Kitchen Table"
 date: "2025-06-22"
 excerpt: "The story behind the campaign that landed on 7 News — from hand-printed posters on Sydney's Northern Beaches to a movement that held corporations accountable for plastic pollution."
-coverImage: "https://i.ytimg.com/vi/sAWdFiPQErY/maxresdefault.jpg"
+coverImage: "/images/press/7news_youtube-maxres.jpg"
 tags: ["plastic free beaches", "activism", "street art", "Northern Beaches"]
 published: true
 ---

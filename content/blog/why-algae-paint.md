@@ -2,7 +2,7 @@
 title: "Why I Paint with Algae-Based Paint"
 date: "2025-11-10"
 excerpt: "The environmental cost of conventional paints is staggering. Here's why InkHunter switched to sustainable, algae-based alternatives — and why the results are actually better."
-coverImage: "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c983ef1b0243ac26bae327_PatrickHunter_14.jpg"
+coverImage: "/images/projects/marion-bay/marion-bay_PatrickHunter_14.jpg"
 tags: ["sustainability", "materials", "process", "environment"]
 published: true
 ---

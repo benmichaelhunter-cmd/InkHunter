@@ -6,10 +6,10 @@ location: "Manly, Northern Beaches, NSW"
 year: 2019
 client: "Northern Beaches Council"
 featured: false
-coverImage: "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c982ee896b28a7e75b49f2_PatrickHunter_20.jpg"
+coverImage: "/images/projects/manly-vibes/manly-vibes_PatrickHunter_20.jpg"
 galleryImages:
-  - "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c982f0ed2561a5c38c6f28_PatrickHunter_19.jpg"
-  - "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c982f3ed2561a5c38c7054_PatrickHunter_18.jpg"
+  - "/images/projects/manly-vibes/manly-vibes_PatrickHunter_19.jpg"
+  - "/images/projects/manly-vibes/manly-vibes_PatrickHunter_18.jpg"
 brief: "The mural that put InkHunter on the national stage — a vibrant celebration of Northern Beaches coastal life that won the 2019 Australian Street Art Awards Utility Award."
 testimonial:
   quote: "This artwork captures the spirit of Manly perfectly. It's become part of the community fabric."

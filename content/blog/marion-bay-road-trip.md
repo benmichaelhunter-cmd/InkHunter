@@ -2,7 +2,7 @@
 title: "1,600km to Paint a Mural for Free: The Marion Bay Story"
 date: "2025-12-18"
 excerpt: "When a small South Australian town lost its marine ecosystem to an algal bloom catastrophe, I drove across the country to donate a mural — here's why."
-coverImage: "https://cdn.prod.website-files.com/6344ddf77e0ea6f95d2d9fa3/65c983ef1b0243ac26bae327_PatrickHunter_14.jpg"
+coverImage: "/images/projects/marion-bay/marion-bay_PatrickHunter_14.jpg"
 tags: ["Marion Bay", "environment", "community", "behind-the-scenes"]
 published: true
 ---

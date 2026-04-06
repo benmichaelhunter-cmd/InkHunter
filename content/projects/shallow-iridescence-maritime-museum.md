@@ -6,11 +6,11 @@ location: "Darling Harbour, Sydney, NSW"
 year: 2023
 client: "Australian National Maritime Museum"
 featured: false
-coverImage: "https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20detail3%20photo%20Sahlan%20Hayes%201.jpg"
+coverImage: "/images/projects/shallow-iridescence/shallow-iridescence_detail1.jpg"
 galleryImages:
-  - "https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20with%20performers%202%20Photo%20Rhiannon%20Hopley.jpeg"
-  - "https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20detail1%20photo%20Sahlan%20Hayes.jpg"
-  - "https://cms-web.seamuseum.net/sites/default/files/fotoweb/2024-07/InkHunter%20mural%20detail2%20photo%20Sahlan%20Hayes.jpg"
+  - "/images/projects/shallow-iridescence/shallow-iridescence_performers.jpeg"
+  - "/images/projects/shallow-iridescence/shallow-iridescence_detail2.jpg"
+  - "/images/projects/shallow-iridescence/shallow-iridescence_detail3.jpg"
 brief: "A perspective mural at the museum's entrance, designed to reveal a giant blue-ringed octopus when viewed from Pyrmont Bridge — sparking conversations about ocean health."
 testimonial:
   quote: "The way Patrick designed this work to transform depending on your viewpoint is genuinely innovative. It stops people in their tracks and makes them think about what lies beneath the surface."
