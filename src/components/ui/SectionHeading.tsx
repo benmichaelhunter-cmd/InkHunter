@@ -16,7 +16,7 @@ export default function SectionHeading({
   return (
     <div
       className={clsx(
-        "mb-12 md:mb-16",
+        "mb-8 md:mb-16",
         align === "center" && "text-center",
         className
       )}

@@ -19,7 +19,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       {/* Backdrop */}
       <div
         className={clsx(
-          "fixed inset-0 bg-ocean-950/60 backdrop-blur-sm transition-opacity duration-300 lg:hidden",
+          "fixed inset-0 z-40 bg-ocean-950/60 backdrop-blur-sm transition-opacity duration-300 lg:hidden",
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         )}
         onClick={onClose}
@@ -36,7 +36,12 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         aria-modal="true"
         aria-label="Navigation menu"
       >
-        <div className="flex flex-col h-full pt-24 pb-8 px-6">
+        <div className="flex flex-col h-full pt-8 pb-8 px-6">
+          <div className="mb-6 px-4">
+            <span className="font-display text-2xl font-bold tracking-tight text-ocean-950">
+              InkHunter
+            </span>
+          </div>
           <nav className="flex-1 space-y-1">
             {NAV_LINKS.map((link) => {
               if (link.children) {

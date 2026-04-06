@@ -36,7 +36,7 @@ const colorMap: Record<
 
 export default function Pillars() {
   return (
-    <section className="py-24 md:py-32 bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden">
+    <section className="py-10 md:py-32 bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden">
       {/* Subtle background decoration */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-ocean-50/30 rounded-full blur-3xl pointer-events-none" />
 
