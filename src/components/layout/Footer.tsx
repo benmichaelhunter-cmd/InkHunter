@@ -44,7 +44,7 @@ export default function Footer() {
                 alt={SITE_NAME}
                 width={160}
                 height={46}
-                className="h-10 w-auto invert brightness-200 -ml-1"
+                className="h-10 w-auto invert brightness-200 -ml-3"
               />
             </Link>
             <p className="mt-3 text-ocean-300 text-sm leading-relaxed">
