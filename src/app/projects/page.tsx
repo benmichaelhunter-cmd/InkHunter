@@ -19,6 +19,7 @@ export default async function ProjectsPage() {
     <div className="pt-28 pb-24">
       <Container>
         <SectionHeading
+          eyebrow="Portfolio"
           title="Projects"
           subtitle="Large-scale murals, community art, and environmental public works — each with a story of place, people, and purpose."
         />

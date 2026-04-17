@@ -21,13 +21,13 @@ export default function Button({
   onClick,
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center font-semibold rounded-full transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ocean-500 focus-visible:ring-offset-2";
+    "inline-flex items-center justify-center font-semibold rounded-full transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ocean-500 focus-visible:ring-offset-2 active:scale-[0.97]";
 
   const variants = {
     primary:
-      "bg-ocean-600 text-white hover:bg-ocean-700 shadow-lg shadow-ocean-600/25 hover:shadow-ocean-700/30",
+      "bg-gradient-to-b from-ocean-500 to-ocean-700 text-white hover:from-ocean-600 hover:to-ocean-800 shadow-lg shadow-ocean-600/30 hover:shadow-xl hover:shadow-ocean-600/40 hover:-translate-y-0.5",
     secondary:
-      "bg-ocean-50 text-ocean-700 hover:bg-ocean-100 border border-ocean-200",
+      "bg-ocean-50 text-ocean-700 hover:bg-ocean-100 border border-ocean-200 hover:border-ocean-300",
     outline:
       "bg-transparent text-ocean-600 border-2 border-ocean-600 hover:bg-ocean-600 hover:text-white",
   };

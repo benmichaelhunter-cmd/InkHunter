@@ -14,21 +14,25 @@ export default function Footer() {
   return (
     <footer className="bg-ocean-950 text-white">
       {/* CTA Band */}
-      <div className="border-b border-white/10">
-        <Container className="py-16 md:py-20 text-center">
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+      <div className="relative border-b border-white/10 overflow-hidden bg-gradient-to-b from-ocean-900 to-ocean-950">
+        <div className="absolute inset-0 opacity-30 pointer-events-none">
+          <div className="absolute -top-24 left-1/4 w-96 h-96 bg-ocean-600/40 rounded-full blur-3xl" />
+          <div className="absolute -bottom-24 right-1/4 w-96 h-96 bg-ochre-600/20 rounded-full blur-3xl" />
+        </div>
+        <Container className="relative py-16 md:py-20 text-center">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">
             Ready to transform your space?
           </h2>
-          <p className="text-ocean-200 text-lg mb-8 max-w-xl mx-auto">
+          <p className="text-ocean-200 text-lg mb-8 max-w-xl mx-auto leading-relaxed">
             Let&apos;s talk about how art can connect your community to place,
             nature, and each other.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-ocean-950 font-semibold rounded-full hover:bg-ocean-50 transition-colors text-lg"
+            className="group inline-flex items-center gap-2 px-8 py-4 bg-white text-ocean-950 font-semibold rounded-full hover:bg-ocean-50 transition-all duration-300 text-lg shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
           >
             Commission a Project
-            <ArrowUpRight className="w-5 h-5" />
+            <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </Container>
       </div>

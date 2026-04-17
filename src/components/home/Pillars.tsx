@@ -42,6 +42,7 @@ export default function Pillars() {
 
       <Container>
         <SectionHeading
+          eyebrow="Our Approach"
           title="Art with Purpose"
           subtitle="Every project is built on three pillars — environment, community, and wellbeing. Together, they create art that matters."
         />
@@ -56,6 +57,11 @@ export default function Pillars() {
                   <div
                     className={`relative p-8 lg:p-10 rounded-3xl bg-gradient-to-br ${colors.gradient} border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 h-full overflow-hidden`}
                   >
+                    {/* Number badge */}
+                    <span className="absolute top-6 right-6 font-display text-5xl font-bold text-ocean-950/5 leading-none select-none">
+                      0{i + 1}
+                    </span>
+
                     {/* Accent bar */}
                     <div
                       className={`w-10 h-1 ${colors.accent} rounded-full mb-8 transition-all duration-500 group-hover:w-16`}
@@ -63,7 +69,7 @@ export default function Pillars() {
 
                     {/* Icon */}
                     <div
-                      className={`w-14 h-14 rounded-2xl ${colors.iconBg} ${colors.iconText} flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rounded-xl`}
+                      className={`w-14 h-14 rounded-2xl ${colors.iconBg} ${colors.iconText} flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rounded-xl shadow-sm`}
                     >
                       {iconMap[pillar.icon]}
                     </div>
